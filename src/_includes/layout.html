@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{site.siteTitle}}</title>
+  </head>
+  <body class="{{pageClass}}">
+    <nav>
+      <ul>
+        {% for page in collections.page %}
+        <li>
+          <a href="{{ page.url | url }}">{{ page.data.navTitle }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <main tabindex="-1" class="content">
+      <h1>{{ pageTitle }}</h1>
+      {{ content }}
+    </main>
+  </body>
+</html>

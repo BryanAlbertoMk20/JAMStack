@@ -1,6 +1,8 @@
 # Ignore artifacts:
 build
 coverage
+other
+db
 
 # Ignore all readme files:
 readme.md

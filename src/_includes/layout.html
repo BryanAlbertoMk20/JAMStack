@@ -9,6 +9,7 @@
   <body class="{{pageClass}}">
     <nav>
       <ul>
+        <li><a href="/">Home</a></li>
         {% for page in collections.page %}
         <li>
           <a href="{{ page.url | url }}">{{ page.data.navTitle }}</a>
@@ -20,5 +21,6 @@
       <h1>{{ pageTitle }}</h1>
       {{ content }}
     </main>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>

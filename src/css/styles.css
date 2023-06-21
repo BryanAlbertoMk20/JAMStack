@@ -52,7 +52,8 @@ button {
   color: #fff;
   border-radius: 4px;
   font-size: 1rem;
-  width: 4rem;
+  /* width: 4rem; */
+  cursor: pointer;
 }
 
 .pics .content img {
@@ -65,4 +66,20 @@ button {
 }
 .pictures h1 {
   color: rgb(11, 123, 11);
+}
+
+@media (min-width: 480px) {
+  .stories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+.stories .item {
+  border-bottom: 1px dashed #aaa;
+}
+
+figure {
+  margin: 0;
 }
